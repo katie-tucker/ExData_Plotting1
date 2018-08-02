@@ -13,7 +13,7 @@ hpc$DateTime <- strptime(paste(as.character(hpc$Date),as.character(hpc$Time)),
                          "%Y-%m-%d %H:%M:%S")
 
 ###Creates png plot###
-png("plot4", width = 480, height = 480)
+png("plot4.png", width = 480, height = 480)
 par(mfrow=c(2,2))
 
 ###First Plot (plot2)###

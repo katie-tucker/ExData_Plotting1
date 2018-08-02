@@ -13,7 +13,7 @@ hpc$DateTime <- strptime(paste(as.character(hpc$Date),as.character(hpc$Time)),
                          "%Y-%m-%d %H:%M:%S")
 
 ###Creates png plot###
-png("plot3", width = 480, height = 480)
+png("plot3.png", width = 480, height = 480)
 plot(hpc$DateTime, hpc$Sub_metering_1,type="l",xlab = "",
      ylab = "Energy sub metering", 
      col="black")

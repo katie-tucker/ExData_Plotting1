@@ -8,7 +8,7 @@ hpc_full$Date <- as.Date(as.character(hpc_full$Date), "%d/%m/%Y")
 hpc <- subset(hpc_full, hpc_full$Date >= "2007-02-01" & 
                   hpc_full$Date <= "2007-02-02",na.rm=TRUE)
 ###Creates png plot###
-png("plot1", width = 480, height = 480)
+png("plot1.png", width = 480, height = 480)
 hist(as.numeric(hpc$Global_active_power), col = "red", 
      xlab = "Global Active Power (kilowatts)",ylab = "Frequency", 
      main = "Global Active Power")
